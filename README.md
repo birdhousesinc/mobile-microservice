@@ -9,6 +9,23 @@ __ORDERS_SERVICE:__ ID of the orders mongo database
   
 # Group Mobile Microservice API
 
+# accounts [/accounts]
+
+'Get accounts' endpoint.
+
+## accounts [GET] 
+
+'List accounts' endpoint.
+
++ Request (application/json)
+
++ Response 200 (application/json)
+    + Body
+    
+            {
+              "list": ["accounts", "go", "here"]
+            }
+
 # orders [/orders]
 
 'Get orders' endpoint.
