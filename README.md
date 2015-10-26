@@ -1,25 +1,45 @@
-# FeedHenry Hello World MBaaS Server
+# Birdhouses Inc Mobile Microservice
 
-This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
+This microservice is a simple gateway, passing requests through to the relevant Microservice  
+It relies on a series of environment variables being set up:  
+__SALESFORCE_SERVICE:__ ID of the Salesforce mBaaS service  
+__SHAREPOINT_SERVICE:__ ID of the Sharepoint mBaaS Service  
+__PRODUCTS_LIST_ID:__ ID of the list in Sharepoint which contains our products descriptions  
+__ORDERS_SERVICE:__ ID of the orders mongo database  
+  
+# Group Mobile Microservice API
 
-# Group Hello World API
+# orders [/orders]
 
-# hello [/hello]
+'Get orders' endpoint.
 
-'Hello world' endpoint.
+## orders [GET] 
 
-## hello [POST] 
+'List orders' endpoint.
 
-'Hello world' endpoint.
++ Request (application/json)
+
++ Response 200 (application/json)
+    + Body
+    
+            {
+              "list": ["orders", "go", "here"]
+            }
+
+## orders [POST] 
+
+'Create order' endpoint.
 
 + Request (application/json)
     + Body
+    
             {
-              "hello": "world"
+              "some": "order info"
             }
 
 + Response 200 (application/json)
     + Body
+    
             {
-              "msg": "Hello world"
+              "your": "new order here"
             }
