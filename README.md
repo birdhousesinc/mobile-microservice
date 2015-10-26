@@ -25,6 +25,23 @@ __ORDERS_SERVICE:__ ID of the orders mongo database
             {
               "list": ["accounts", "go", "here"]
             }
+            
+# products [/products]
+
+'Get products' endpoint.
+
+## products [GET] 
+
+'List products' endpoint.
+
++ Request (application/json)
+
++ Response 200 (application/json)
+    + Body
+    
+            {
+              "list": ["products", "go", "here"]
+            }
 
 # orders [/orders]
 
